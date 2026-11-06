@@ -11,6 +11,7 @@
   --gradient-1-right: hsl(229, 57%, 11%);
   --gradient-2-left: hsl(6, 100%, 80%);
   --gradient-2-right: hsl(335, 100%, 65%);
+  --extra-bold: 900;
 }
 
 * {
@@ -22,13 +23,14 @@
 @font-face {
   font-family: Raleway;
   src: url(Raleway/Raleway-VariableFont_wght.ttf);
-  font-weight: 400 700;
+  font-weight: 400 900;
   font-style: normal;
   font-display: swap;
 }
 .text-preset-1 {
   font-family: var(--raleway);
   font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .text-preset-2-bold {
@@ -49,6 +51,14 @@
   font-family: var(--raleway);
   font-size: 0.75rem;
   line-height: 1.15;
+  font-weight: var(--extra-bold);
+}
+
+.text-preset-3-bold {
+  font-family: var(--raleway);
+  font-size: 0.75rem;
+  line-height: 1.15;
+  font-weight: bold;
 }
 
 main {
@@ -82,6 +92,7 @@ nav {
   background-color: var(--blue-850);
   border-radius: 0.33rem;
   border-top-right-radius: 6rem;
+  max-width: 22rem;
 }
 
 .company-logo {
@@ -116,18 +127,23 @@ nav a {
 
 .text-line {
   padding-bottom: 0.5rem;
+  color: var(--blue-200);
 }
 
 .storage-left {
-  position: relative;
-  top: 1rem;
-  left: 2.5rem;
+  margin: 0 auto;
   background-color: var(--white);
   padding: 1rem;
   color: var(--blue-950);
   border-radius: 0.5rem;
   width: 10rem;
   text-align: center;
+}
+
+.storage-label {
+  opacity: 50%;
+  position: relative;
+  bottom: 0.9rem;
 }
 
 .progress-bar-container {
@@ -175,6 +191,64 @@ nav a {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (width >= 660px) {
+  body {
+    background-image: url(./images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 50vh;
+    background-color: var(--blue-950);
+    background-position: center bottom;
+  }
+  nav {
+    border-radius: 0.65rem;
+    border-top-right-radius: 6.25rem;
+  }
+  .storage-info-container {
+    border-radius: 0.65rem;
+  }
+}
+@media (width >= 1024px) {
+  .card {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  nav {
+    width: 21.875rem;
+  }
+  .storage-info-container {
+    max-width: 33.75rem;
+    max-height: 9.625rem;
+  }
+  .storage-left {
+    position: relative;
+    top: -11.5rem;
+    left: 5.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .storage-units {
+    outline: solid red;
+    min-width: fit-content;
+    padding: 0.5rem;
+  }
+  .storage-left::after {
+    content: "";
+    position: relative;
+    bottom: 0;
+    left: -4.45rem;
+    width: 0;
+    height: 0;
+    border: 2rem solid transparent;
+    border-top-color: var(--white);
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: 3.5rem;
+    margin-bottom: -6.75rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
