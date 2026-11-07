@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://github.com/RoomForEpsilon/fylo-data-storage-component)
+- Live Site URL: [Live site URL here](https://roomforepsilon.github.io/fylo-data-storage-component/)
 
 ## My process
 
@@ -41,17 +41,14 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Sass
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I used Sass because it was suggested in the "Ideas to Test Yourself" section to do so.  I really liked the additional features Sass adds to css.  And it wasn't too difficult to start learning how to use it!
+
+
 
 To see how you can add code snippets, see below:
 
