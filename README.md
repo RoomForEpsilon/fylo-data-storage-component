@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/fylo-screenshot.png)
+![Screenshot](./images/fylo-screenshot.png)
 
 ### Links
 
@@ -46,63 +46,24 @@ Users should be able to:
 
 ### What I learned
 
-I used Sass because it was suggested in the "Ideas to Test Yourself" section to do so.  I really liked the additional features Sass adds to css.  And it wasn't too difficult to start learning how to use it!
+I used Sass because it was suggested in the "Ideas to Test Yourself" section.  I liked it.  The mixins were useful, and I'm looking forward to using funcitons.
 
+As my css is improving, I'm becoming more aware of how I'd implement the designs in css, so I'm able to plan better.  My design file is a little messy, there's a lot of classes whose names could be improved, and I think the flow of the file is a little awkward, but I think that will improve for my next projects because I'll plan for them better.
 
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Another think I learned is how to make speach bubbles in css by using borders with no content.  
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I'd like to add a function that generates a random number between 0 and 1,000 and then have the progress bar be proportional to that, along with having an accurate gb's left box.
 
 ### Useful resources
 
-- [BEM 101](https://css-tricks.com/bem-101/) - This helped me understand the BEM naming convention.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Creating a Triangle with just CSS](https://cssbattle.dev/blog/creating-triangle-with-css) - While this didn't teach me how to make a speech bubble in css, it helped me understand how speach bubbles are made in css.  I actually didn't find a good article that explained speech bubbles well, I just looked at different sources and mashed something together before I started to understand what was going on.
 
 ### AI Collaboration
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
-
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
-
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+I used AI to help me figure out how to get information from Figma.  I also use it to remember what the commands are to add a new branch with git.  I also had it run a spelling and grammar check. 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@RoomForEpsilon](https://www.frontendmentor.io/profile/RoomForEpsilon)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
