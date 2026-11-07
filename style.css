@@ -147,30 +147,33 @@ nav a {
 }
 
 .progress-bar-container {
-  background-color: var(--blue-950);
-  border-radius: 2rem;
-  height: 1.5rem;
+  appearance: none;
+  -webkit-appearance: none;
+  display: block;
   width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.progress-bar {
-  width: 81.5%;
-  background: linear-gradient(to right, var(--gradient-2-left), var(--gradient-2-right));
-  height: 1.1rem;
+  height: 1.5rem;
+  padding: 0.2rem;
+  border: 0;
   border-radius: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  background: var(--blue-950);
 }
 
-.progress-bar-knob {
-  background-color: var(--white);
-  border-radius: 50%;
-  width: 0.66rem;
-  height: 0.66rem;
-  margin-right: 0.25rem;
+.progress-bar-container::-webkit-meter-bar {
+  height: 100%;
+  border: 0;
+  border-radius: 2rem;
+  background: transparent;
+  box-shadow: none;
+}
+
+.progress-bar-container::-webkit-meter-optimum-value {
+  border-radius: 2rem;
+  background: radial-gradient(circle closest-side, var(--white) 98%, transparent 100%) right 0.25rem center/0.66rem 0.66rem no-repeat, linear-gradient(to right, var(--gradient-2-left), var(--gradient-2-right));
+}
+
+.progress-bar-container::-moz-meter-bar {
+  border-radius: 2rem;
+  background: radial-gradient(circle closest-side, var(--white) 98%, transparent 100%) right 0.25rem center/0.66rem 0.66rem no-repeat, linear-gradient(to right, var(--gradient-2-left), var(--gradient-2-right));
 }
 
 .progress-bar-range {
@@ -242,7 +245,6 @@ nav a {
   .storage-left::after {
     content: "";
     position: relative;
-    bottom: 0;
     right: 1.8rem;
     top: 2.7rem;
     width: 0;
