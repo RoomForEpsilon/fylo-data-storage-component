@@ -241,13 +241,14 @@ nav a {
 
    .storage-left {
       position: relative;
-      top: -11.5rem;
+      top: -9.5rem;
       left: 0;
       display: flex;
       flex-direction: row;
       align-items: center;
       float: right;
       border-bottom-right-radius: 0;;
+      padding: .5rem 1rem;
    }
 
    .storage-units {
@@ -263,11 +264,11 @@ nav a {
       content: '';
       position: relative;
       bottom: 0;
-      right: 3.8rem;
-      top: 3.5rem; 
+      right: 1.8rem;
+      top: 2.7rem; 
       width: 0;
       height: 0;
-      border: 2.5rem solid transparent;
+      border: 1.5rem solid transparent;
       border-right-color: var(--white);
       border-top: 0;
 
