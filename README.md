@@ -61,7 +61,7 @@ I’d like to add a function that generates a random number between 0 and 1,000 
 
 ### AI Collaboration
 
-I used AI to help me figure out how to get information from Figma.  I also use it to remember what the commands are to add a new branch with Git.  I also had it run a spelling and grammar check. 
+I used AI to help me figure out how to get information from Figma.  I used it to remember what the commands are to add a new branch with Git.  I had it run a spelling and grammar check.  Finally, I had it review my code for errors.  
 
 ## Author
 

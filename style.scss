@@ -159,42 +159,30 @@ nav a {
 }
 
 .progress-bar-container {
-   appearance: none;
-   -webkit-appearance: none;
-   display: block;
-   width: 100%;
+   background-color: var(--blue-950);
+   border-radius: 2rem;
    height: 1.5rem;
-   padding: .2rem;
-   border: 0;
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.progress-bar {
+   width: calc(((1000 - 185) / 1000) * 100%);
+   background: linear-gradient(to right, var(--gradient-2-left), var(--gradient-2-right));
+   height: 1.1rem;
    border-radius: 2rem;
-   background: var(--blue-950);
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
 }
 
-// Safari and Chromium: style the meter's internal track.
-.progress-bar-container::-webkit-meter-bar {
-   height: 100%;
-   border: 0;
-   border-radius: 2rem;
-   background: transparent;
-   box-shadow: none;
-}
-
-// Paint the white endpoint over the gradient; the meter controls fill width.
-@mixin meter-fill {
-   border-radius: 2rem;
-   background:
-      radial-gradient(circle closest-side, var(--white) 98%, transparent 100%)
-         right .25rem center / .66rem .66rem no-repeat,
-      linear-gradient(to right, var(--gradient-2-left), var(--gradient-2-right));
-}
-
-.progress-bar-container::-webkit-meter-optimum-value {
-   @include meter-fill;
-}
-
-// Firefox uses a different pseudo-element for the filled portion.
-.progress-bar-container::-moz-meter-bar {
-   @include meter-fill;
+.progress-bar-knob {
+   background-color: var(--white);
+   border-radius: 50%;
+   width: .66rem;
+   height: .66rem;
+   margin-right: .25rem;
 }
 
 .progress-bar-range {
@@ -271,6 +259,7 @@ nav a {
    }
 
 
+   /* Creates the triangular pointer on the storage text bubble. */
    .storage-left::after {
       content: '';
       position: relative;

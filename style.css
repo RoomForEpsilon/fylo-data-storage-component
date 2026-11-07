@@ -147,33 +147,30 @@ nav a {
 }
 
 .progress-bar-container {
-  appearance: none;
-  -webkit-appearance: none;
-  display: block;
-  width: 100%;
+  background-color: var(--blue-950);
+  border-radius: 2rem;
   height: 1.5rem;
-  padding: 0.2rem;
-  border: 0;
-  border-radius: 2rem;
-  background: var(--blue-950);
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.progress-bar-container::-webkit-meter-bar {
-  height: 100%;
-  border: 0;
+.progress-bar {
+  width: 81.5%;
+  background: linear-gradient(to right, var(--gradient-2-left), var(--gradient-2-right));
+  height: 1.1rem;
   border-radius: 2rem;
-  background: transparent;
-  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.progress-bar-container::-webkit-meter-optimum-value {
-  border-radius: 2rem;
-  background: radial-gradient(circle closest-side, var(--white) 98%, transparent 100%) right 0.25rem center/0.66rem 0.66rem no-repeat, linear-gradient(to right, var(--gradient-2-left), var(--gradient-2-right));
-}
-
-.progress-bar-container::-moz-meter-bar {
-  border-radius: 2rem;
-  background: radial-gradient(circle closest-side, var(--white) 98%, transparent 100%) right 0.25rem center/0.66rem 0.66rem no-repeat, linear-gradient(to right, var(--gradient-2-left), var(--gradient-2-right));
+.progress-bar-knob {
+  background-color: var(--white);
+  border-radius: 50%;
+  width: 0.66rem;
+  height: 0.66rem;
+  margin-right: 0.25rem;
 }
 
 .progress-bar-range {
@@ -242,6 +239,7 @@ nav a {
     position: relative;
     top: 0.05rem;
   }
+  /* Creates the triangular pointer on the storage text bubble. */
   .storage-left::after {
     content: "";
     position: relative;
