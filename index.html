@@ -19,21 +19,41 @@
             <img 
               class="nav-icon" 
               src="./images/icon-document.svg" 
-              alt="Document link"
+              alt=""
               width="20" 
               height="24"
+              aria-label="Documents"
             >
           </a>
-          <a href="#"><img class="nav-icon" src="./images/icon-folder.svg" alt="Folder link"></a>
-
-          <a href="#"><img class="nav-icon" src="./images/icon-upload.svg" alt="Upload link"></a>
+          <a href="#">
+            <img 
+              class="nav-icon" 
+              src="./images/icon-folder.svg" 
+              alt=""
+              aria-label="Folders"
+            >
+          </a>
+          <a href="#">
+            <img 
+              class="nav-icon" 
+              src="./images/icon-upload.svg" 
+              alt="Upload link"
+              aria-label="Uploads"
+            >
+          </a>
         </div>
       </nav>
       <section class="storage-info-container">
         <div class="text-info-container">
           <p class="text-line text-preset-2-regular">You’ve used <span class="text-preset-2-bold">815 GB</span> of your storage</p>
           <div class="progress-bar-container">
-            <div class="progress-bar">
+            <div 
+              class="progress-bar" 
+              role="progressbar" 
+              aria-valuemin="0" 
+              aria-valuemax="1000"
+              aria-valuenow="815"
+              aria-label="Storage used">
               <div class="progress-bar-knob"></div>
             </div>
           </div>
@@ -41,7 +61,7 @@
             <span class="progress-bar__begin text-preset-3-bold">0 GB</span>
             <span class="progress-bar__end text-preset-3-bold">1000 GB</span>
           </div>
-          <p class="storage-left text-preset-3-bold"><span class="text-preset-1 storage-left-number">185</span> <span class="storage-label storage-units">GB Left</span></p>
+          <p class="text-bubble text-preset-3-bold"><span class="text-preset-1 storage-left-number">185</span> <span class="storage-label storage-units">GB Left</span></p>
         </div>
       </section>
     </article>
