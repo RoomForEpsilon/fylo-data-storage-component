@@ -215,13 +215,11 @@ nav a {
   }
   .storage-info-container {
     width: 37.5vw;
-    outline: solid red;
   }
   .text-info-container {
     padding: 2rem 0 1rem;
     position: relative;
     top: auto;
-    outline: solid greenyellow;
   }
   .text-bubble {
     position: absolute;
